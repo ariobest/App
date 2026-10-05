@@ -15,3 +15,7 @@ Open the folder as a Gradle project and run:
 
 ### Important Android limitation
 Modern Android versions restrict unrestricted access to all storage. This starter uses the app's external-storage view and media permissions. For true Android-wide file management on newer Android versions, add Android's Storage Access Framework and, where appropriate, the special `MANAGE_EXTERNAL_STORAGE` flow, subject to Play Store policy.
+
+
+## If GitHub build fails
+The workflow now uses Gradle 8.10 directly and `--stacktrace --info`, so the failing Gradle message will be visible in the Actions log.

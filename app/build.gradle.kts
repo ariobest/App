@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 android {
+    buildFeatures { buildConfig = false }
     namespace="com.ario.filemanager"
     compileSdk=35
     defaultConfig {
